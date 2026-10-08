@@ -1,4 +1,18 @@
-# Watch Session Tracker - Lightweight PoC
+# Watch Session Tracker: Lightweight Build
+
+[![tests](https://github.com/atonyhonesto/watch-session-tracker-lightweight/actions/workflows/tests.yml/badge.svg)](https://github.com/atonyhonesto/watch-session-tracker-lightweight/actions/workflows/tests.yml) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?logo=nodedotjs&logoColor=white) ![dependencies](https://img.shields.io/badge/runtime_dependencies-0-2ea44f)
+
+A real-time watch-session service for live sports streams in TypeScript and Node.js, with **no runtime dependencies**: Node's built-in `http` module, a hand-written validator and an in-memory store. See [`Stakeholder Concerns README.md`](Stakeholder%20Concerns%20README.md) for how it balances real-time counts, event loss and simplicity.
+
+Companion code for my LinkedIn article **[Three Stakeholders, One Proof of Concept: Building a Real-Time Watch Session Tracker](https://www.linkedin.com/pulse/three-stakeholders-one-proof-concept-tony-honesto-rvkqc/)**. The article covers the design trade-offs: a 45-second activity window against a 10–15 second target, event-ID deduplication, two clocks, and why it was built twice.
+
+| Repo | What it is |
+|---|---|
+| **[Lightweight build](https://github.com/atonyhonesto/watch-session-tracker-lightweight)** ← you are here | Node `http`, no runtime dependencies |
+| [Common-libraries build](https://github.com/atonyhonesto/watch-session-tracker-express-zod) | Express, Zod, Supertest |
+| [Event simulator](https://github.com/atonyhonesto/watch-session-event-simulator) | PowerShell, a simulated two-minute wrestling match |
+
+---
 
 A stripped-down TypeScript + Node.js proof of concept for the watch-session service.
 
